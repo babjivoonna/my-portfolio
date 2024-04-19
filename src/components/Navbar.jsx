@@ -1,4 +1,6 @@
 import { NavLink } from "react-router-dom"
+import FoodDelivery from '../assets/FoodDelivery.png'
+
 
 const Navbar = () => {
   return (
@@ -27,7 +29,7 @@ const Navbar = () => {
           Blog
         </NavLink>
       </li> */}
-
+  
       <li className="navbar-item">
         <NavLink to="/contact" className="navbar-link" data-nav-link>
           Contact

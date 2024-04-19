@@ -1,24 +1,25 @@
 import  { useState, useEffect } from 'react';
 import { FaRegEye } from 'react-icons/fa';
+import {projectsData} from '../../assets/projectsData'
 
 const Portfolio = () => {
   // State to store project data and filtered projects
-  const [projects, setProjects] = useState([]);
-  const [filteredProjects, setFilteredProjects] = useState([]);
+  const [projects, setProjects] = useState(projectsData);
+  const [filteredProjects, setFilteredProjects] = useState(projectsData);
 
   // State to store the selected category
   const [selectedCategory, setSelectedCategory] = useState('All');
 
   // Load project data from projects.json
-  useEffect(() => {
-    fetch('/projects.json')
-      .then(response => response.json())
-      .then(data => {
-        setProjects(data);
-        setFilteredProjects(data);
-      })
-      .catch(error => console.error('Error loading project data:', error));
-  }, []);
+  // useEffect(() => {
+  //   fetch('/projects.json')
+  //     .then(response => response.json())
+  //     .then(data => {
+  //       setProjects(data);
+  //       setFilteredProjects(data);
+  //     })
+  //     .catch(error => console.error('Error loading project data:', error));
+  // }, []);
   console.log(projects,"projects")
 
   // Function to handle category filter selection
@@ -63,13 +64,14 @@ const Portfolio = () => {
               data-category={project.category}
               key={project.id}
             >
-              <a href="#">
+              <a href={project.link}>
+              <a href={project.link}>
                 <figure className="project-img">
-                  <div className="project-item-icon-box">
-                    <FaRegEye />
+                  <div  className="project-item-icon-box">
+                   <FaRegEye />
                   </div>
                   <img src={project.image} alt={project.title} loading="lazy" />
-                </figure>
+                </figure> </a>
                 <h3 className="project-title">{project.title}</h3>
                 <p className="project-category">{project.category}</p>
               </a>
