@@ -7,6 +7,7 @@ import Portfolio from '../assets/Portfolio.png'
 import TicTacToe from '../assets/TicTacToe.png'
 import VideoTube from '../assets/VideoTube.png'
 import CourseWebsite from '../assets/CourseWebsite.png'
+import SwordCustomize from '../assets/Sword-Customize.png'
 // import FoodDelivery from '../assets/FoodDelivery.png'
 
 
@@ -20,4 +21,5 @@ export const projectsData=[
     {id: 7, title: 'game',      link:"https://tic-tac-toe-three-beta-30.vercel.app/",  category: 'React Web Applications', image: TicTacToe},
     {id: 8, title: 'videoapp',  link:"https://video-tube-mu.vercel.app/",  category: 'Full Stack Applications', image: VideoTube},
     {id: 9, title: 'webSite',   link:"https://coursesite-11.vercel.app/",  category: 'Web design', image: CourseWebsite}, 
+    {id:10, title:'Bussiness', link:"https://sword-customizing.vercel.app/",category:"Full Stack Applications", image:SwordCustomize}
 ]
