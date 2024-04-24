@@ -1143,7 +1143,7 @@ textarea.form-input::-webkit-resizer { display: none; }
  * responsive larger than 450px screen
  */
 
-@media (min-width: 450px) {
+ @media (min-width: 450px) {
 
   /**
    * client
@@ -1674,7 +1674,7 @@ textarea.form-input::-webkit-resizer { display: none; }
  * responsive larger than 1250px screen
  */
 
-@media (min-width: 1250px) {
+@media (min-width: 150px) {
 
   /**
    * RESET
